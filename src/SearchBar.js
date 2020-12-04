@@ -1,11 +1,31 @@
 import React from 'react';
 
-function createSearchBar(){
+class CreateSearchBar extends React.Component{
 
-    return(
-        <input type="text" placeholder="Search..."></input>
-    )
+    constructor(props){
+        super(props);
+        this.state = {
+            userInput: '',
+
+        }
+    }
+
+    logKeyUp(){
+        console.log('#searchbar'.valueOf())
+    }
+
+    updateSearch(event){
+        this.setState({userInput: event.target.value.substr(0, 20)});
+    }
+
+    
+    render(){
+        return(
+            <div>
+                <input type="text" placeholder="Search..." /* value={this.state.userInput} */ onKeyUp={this.updateSearch.bind(this)}></input>
+            </div>
+        )}
 }
 
 
-export default createSearchBar;
+export default CreateSearchBar;
