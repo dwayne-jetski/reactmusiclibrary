@@ -28,7 +28,7 @@ class CreateTable extends React.Component{
         })
         }).catch((err) =>{
           console.log(err);
-        });
+        }); 
       }
 
       buildTable(filteredData) {
