@@ -1,3 +1,8 @@
+# music-library-react
+
+# description
+A re-work of my previous music library, but this time it's done with react instead of jquery. It connects with an api to gather data and display on a webpage. I even added a search bar to filter this time around.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
